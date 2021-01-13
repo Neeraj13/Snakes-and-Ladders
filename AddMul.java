@@ -9,7 +9,11 @@ for(int i=0;i<5;i++)
 {
 for(j=0;j<5;j++)
 {
+ c[i][j]=0;
+for(int k=0;k<5;k++)
+{
 c[i][j]=a[i][j]+b[i][j];
+ c[i][j]=a[i][k]*b[k][j];  
 System.out.println(c[i][j]+" ");
 }
 System.out.println();
